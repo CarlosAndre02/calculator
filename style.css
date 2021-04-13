@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(175, 57, 57);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+}
+
+.container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.output {
+  background-color: rgb(65, 65, 65);
+  width: 360px;
+  height: 90px;
+  color: white;
+  padding-right: 1rem;
+  border: 1px solid gray;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous-operand {
+  opacity: 0.7;
+}
+
+.current-operand {
+  font-size: 2.5rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: repeat(5, 90px);
+}
+
+button {
+  background-color: rgb(65, 65, 65);
+  color: white;
+
+  border: 1px solid gray;
+  outline: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+button:hover {
+  background-color: rgb(93, 93, 93);
+}
+
+#span-two {
+  grid-column: span 2;
+}
